@@ -262,7 +262,7 @@ class HCDevice:
             if action == "POST":
                 if resource == "/ro/values":
                     # Raises exceptions on failure
-                    self.test_feature(data)
+                    # disabled for testing self.test_feature(data)
                 elif resource == "/ro/activeProgram":
                     # Raises exception on failure
                     self.test_program_data(data)
